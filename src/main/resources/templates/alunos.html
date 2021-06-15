@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt" xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boletim On-line</title>
+</head>
+<body>
+    <div>
+        <table>
+            <thead>
+            <tr>
+                <th>MATRICULA</th>
+                <th>NOME</th>
+                <th>GLB</th>
+                <th>CIE</th>
+                <th>EF</th>
+                <th>GEO</th>
+                <th>HIS</th>
+                <th>LP</th>
+                <th>MAT</th>
+                <th>ART</th>
+                <th>ING</th>
+                <th>TURMA</th>
+                <th>FREQ</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="boletin : ${boletins}">
+                <td><span th:text="${boletin.matricula}"></span></a></td>
+                <td><span th:text="${boletin.nome}"></span></td>
+                <td><span th:text="${boletin.glb}"></span></td>
+                <td><span th:text="${boletin.cie}"></span></td>
+                <td><span th:text="${boletin.ef}"></span></td>
+                <td><span th:text="${boletin.geo}"></span></td>
+                <td><span th:text="${boletin.his}"></span></td>
+                <td><span th:text="${boletin.lp}"></span></td>
+                <td><span th:text="${boletin.mat}"></span></td>
+                <td><span th:text="${boletin.art}"></span></td>
+                <td><span th:text="${boletin.ing}"></span></td>
+                <td><span th:text="${boletin.turma}"></span></td>
+                <td><span th:text="${boletin.freq}"></span></td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>

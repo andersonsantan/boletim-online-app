@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt" xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boletim On-line</title>
+</head>
+<body>
+<div>
+    <div>
+        <H1>BOLETIM ESCOLAR</H1>
+        <strong>Escola: </strong> 0918069 - EM PROFESSORA JUREMA PEÇANHA GIRAUD<br/>
+        <strong>Nome do aluno: </strong><span th:text="${boletim.nome}"></span><br/>
+        <strong>Matricula: </strong><span th:text="${boletim.matricula}"></span><br/>
+        <strong>Turma: </strong><span th:text="${boletim.turma}"></span>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>MÉDIAS BIMESTRAIS</th>
+                </tr>
+                <tr>
+                    <th rowspan="2">DISCIPLINA</th>
+                    <th colspan="4">1 COC</th>
+                    <th colspan="4">2 COC</th>
+                    <th colspan="4">3 COC</th>
+                    <th colspan="4">4 COC</th>
+                </tr>
+                <tr>
+                    <th>Conc.</th>
+                    <th>Nota</th>
+                    <th>Frequência</th>
+                    <th>Rec.</th>
+                    <th>Conc.</th>
+                    <th>Nota</th>
+                    <th>Frequência</th>
+                    <th>Rec.</th>
+                    <th>Conc.</th>
+                    <th>Nota</th>
+                    <th>Frequência</th>
+                    <th>Rec.</th>
+                    <th>Conc.</th>
+                    <th>Nota</th>
+                    <th>Frequência</th>
+                    <th>Rec.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Conceito global</strong></td>
+                    <td>| <span th:text="${boletim.glb}"></span></td>
+                    <td><span th:text="${boletim.glb}"></span></td>
+                    <td><span th:text="${boletim.freq}"></span>%</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td><strong>Artes Plásticas</strong></td>
+                    <td>| <span th:text="${boletim.art}"></span></td>
+                    <td> <span th:text="${boletim.art}"></span></td>
+                    <td> <span th:text="${boletim.freq}"></span>%</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td><strong>Ciências</strong></td>
+                    <td>| <span th:text="${boletim.cie}"></span></td>
+                    <td> <span th:text="${boletim.cie}"></span></td>
+                    <td> <span th:text="${boletim.freq}"></span>%</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td><strong>Educação Física</strong></td>
+                    <td>| <span th:text="${boletim.ef}"></span></td>
+                    <td> <span th:text="${boletim.ef}"></span></td>
+                    <td> <span th:text="${boletim.freq}"></span>%</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td><strong>Geografia</strong></td>
+                    <td>| <span th:text="${boletim.geo}"></span></td>
+                    <td> <span th:text="${boletim.geo}"></span></td>
+                    <td> <span th:text="${boletim.freq}"></span>%</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td><strong>História</strong></td>
+                    <td>| <span th:text="${boletim.his}"></span></td>
+                    <td> <span th:text="${boletim.his}"></span></td>
+                    <td> <span th:text="${boletim.freq}"></span>%</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td><strong>Inglês</strong></td>
+                    <td>| <span th:text="${boletim.ing}"></span></td>
+                    <td> <span th:text="${boletim.ing}"></span></td>
+                    <td> <span th:text="${boletim.freq}"></span>%</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td><strong>Língua Portuguesa </strong></td>
+                    <td>| <span th:text="${boletim.lp}"></span></td>
+                    <td> <span th:text="${boletim.lp}"></span></td>
+                    <td> <span th:text="${boletim.freq}"></span>%</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td><strong>Matemática</strong></td>
+                    <td>| <span th:text="${boletim.mat}"></span></td>
+                    <td> <span th:text="${boletim.mat}"></span></td>
+                    <td> <span th:text="${boletim.freq}"></span>%</td>
+                    <td>--</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>

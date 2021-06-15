@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt" xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boletim On-line</title>
+</head>
+<body>
+<nav>
+    <h1>Boletim Online</h1>
+    <h2>Escola Municipal Professora Jurema Peçanha Giraud</h2>
+</nav>
+
+<div>
+    <form action="/aluno" method="GET">
+        Matrícula: <input type="text" name="matricula" placeholder="Digite sua matrícula aqui"><br/>
+        <input type="submit" name="submit" value="Localizar">
+    </form>
+</div>
+
+
+
+</body>
+</html>
