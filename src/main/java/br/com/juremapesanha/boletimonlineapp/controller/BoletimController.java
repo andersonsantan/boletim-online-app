@@ -20,6 +20,7 @@ public class BoletimController {
     public BoletimController(BoletimRepository boletimRepository) {
         this.boletimRepository = boletimRepository;
     }
+
     @RequestMapping(path = "/")
     public ModelAndView index(){
         ModelAndView modelAndView = new ModelAndView("index");

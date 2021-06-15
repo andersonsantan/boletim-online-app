@@ -1,1 +1,1 @@
-web: java -jar -Dspring.profiles.active=heroku build/libs/boletim-online-app-0.0.1-SNAPSHOT.jar
+web: java -Dserver.port=$PORT $JAVA_OPTS -jar -Dspring.profiles.active=heroku build/libs/boletim-online-app-0.0.1-SNAPSHOT.jar
